@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import webSocketImageURL from './websocket/scratch-websocket-image.png';
+import webSocketButtonImageURL from './websocket/scratch-websocket-icon.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,17 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'WebSocket Client',
+        extensionId: 'websocket',
+        collaborator: 'yoshidaster',
+        iconURL: webSocketImageURL,
+        insetIconURL: webSocketButtonImageURL,
+        description: "Communicate with WebSocket server.",
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
     }
 ];
