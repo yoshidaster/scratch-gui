@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import lineBotImageURL from './linebot/linebot-image-600x372.png';
+import lineBotButtonImageURL from './linebot/linebot-icon-80x80.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,18 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'LINE BOT',
+        extensionId: 'linebot',
+        collaborator: 'yoshidaster',
+        iconURL: lineBotImageURL,
+        insetIconURL: lineBotButtonImageURL,
+        description: "LINE Messaging API BOT backend.",
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://developers.line.biz/ja/docs/messaging-api/'
     }
 ];
